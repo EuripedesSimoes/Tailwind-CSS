@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Alura Newsletter</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    color: {
+                        azul: {
+                            claro: '#C5DFFF',
+                            escuro: '#061E3C',
+                            hover: '#1057B0'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-azul-claro flex flex-col justify-center items-center h-screen bg-[#C5DFFF] ">
+    <main class="flex border-2 border-black w-3/4 h-3/4">
+        <section class="bg-[#061E3C] hidden   md:w-[40%] lg:w-1/2 lg:h-auto  md:flex justify-center items-center hid">
+            <img src="./image/icone-mergulhador.svg" class="p-4">
+        </section>
+
+        <section class="bg-white h-full w-full md:w-[60%] lg:w-1/2 flex flex-col justify-center p-6">
+
+            <div class="flex justify-center">
+                <!-- <img src="./image/logo-tailwind.png" alt=""> -->
+                <svg class="w-[50px] h-[50px] mb-4" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+                    fill="#C5DFFF" stroke="black">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9">
+                    </path>
+                </svg>
+            </div>
+
+            <div class=" my-4 mx-2 text-center">
+                <h1 class="font-bold text-4xl ">Alura Newsletter</h1>
+                <p class="text-xl">Mergulhe em uma plataforma que respira tecnologia!</p>
+            </div>
+
+            <form action="" class="flex flex-col justify-center items-start ">
+                <label class="font-bold ">Email</label>
+                <input type="email" name="" id="" placeholder="Digite seu melhor email"
+                    class="w-full text-gray-700 focus-none my-2 shadow-xl border border-black p-1 rounded focus:outline-none hover:border-blue-400 transition hover:ring-2 hover:ring-green-300">
+                <button disabled="disabled" class="w-full bg-blue-700 rounded-full p-2 ">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+</body>
+
+</html>
